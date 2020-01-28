@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -21,7 +21,7 @@
 body { background-color:#ffffff;}
 h1 { color:#000000; font-family:Lucida Console, Monaco, monospace; font-size:30pt; }
 p { color:#000000; font-family:Lucida Console, Monaco, monospace; font-size:12pt; }
-.m-signature-pad--body7 canvas {
+.m-signature-pad--body8 canvas {
   position: relative;
   left: 0;
   top: 0;
@@ -92,7 +92,7 @@ function str_replace(search, replace, subject) {
   {
       var now = new Date();
       if (document.images) {
-          document.images.captchaimg.src = 'http://www.ekiwi-scripts.de/form/v4/formmail_v4.php?action=captcha&id=163404&now=' + now.getTime();
+          document.images.captchaimg.src = 'http://www.ekiwi-scripts.de/form/v4/formmail_v4.php?action=captcha&id=681313&now=' + now.getTime();
       }     
   }
 /* ]]> */
@@ -135,13 +135,13 @@ function validateCaptcha($input) {
      	}	     	
     }
   };
-  xhttp.open("GET", "http://www.ekiwi-scripts.de/form/v4/captcha.php?input=" + $input + "&formid=163404", true);
+  xhttp.open("GET", "http://www.ekiwi-scripts.de/form/v4/captcha.php?input=" + $input + "&formid=681313", true);
   xhttp.send();
 }
 
 function chkFormular()
 {
-document.getElementById('手写签名').value = signaturePad7.toDataURL();
+document.getElementById('手写签名').value = signaturePad8.toDataURL();
 
 	var $catpchaInput = document.DAFORM.captcha_input.value.trim();
 	if (($varCaptchaOK != -1 && $varCaptchaOK == 0) || $catpchaInput == "")
@@ -161,7 +161,7 @@ document.getElementById('手写签名').value = signaturePad7.toDataURL();
 <div class="w3-card-12 w3-white mainContainer">
   <div class="w3-container w3-white">
 <!-- FORMTITLE_BEGIN -->
-      <h1>报名统计表</h1>
+      <h1>NHB报名统计表</h1>
   </div>
 <!-- FORMTITLE_END -->
 <!-- EINLEITUNGTEXT_BEGIN -->
@@ -171,7 +171,7 @@ document.getElementById('手写签名').value = signaturePad7.toDataURL();
 <!-- EINLEITUNGTEXT_END -->
 
   <form class="w3-container" action="http://www.ekiwi-scripts.de/form/v4/formmail_v4.php" method="POST" name="DAFORM" onSubmit="SetCookies();return chkFormular();" enctype="multipart/form-data" target="_self">
-  <input type="hidden" name="formid" value="163404">
+  <input type="hidden" name="formid" value="681313">
   <input type="hidden" name="settings" value="Y2Vicmtxdntkcg==">
   <input type="hidden" name="redirect" value="https://www.ekiwi.de/form/danke.htm">
   <input type="hidden" name="subject" value="Contact form">
@@ -187,31 +187,39 @@ document.getElementById('手写签名').value = signaturePad7.toDataURL();
   <input type="hidden" name="hide_empty_fields" value="-1">
   <input type="hidden" name="settings_encoding" value="utf-8">  
   <input type="hidden" name="ReturnToSender" value="0">
-   <input type="hidden" name="label__名称1" value="5ZCN56ewMQ==">
-   <input type="hidden" name="label__名称2" value="5ZCN56ewMg==">
-   <input type="hidden" name="label__名称" value="5ZCN56ew">
-   <input type="hidden" name="label__下拉" value="5LiL5ouJ">
-   <input type="hidden" name="label__上传1" value="5LiK5LygMQ==">
-   <input type="hidden" name="label__上传2" value="5LiK5LygMg==">
-   <input type="hidden" name="label__上传3" value="5LiK5LygMw==">
-   <input type="hidden" name="label__手写签名" value="5omL5YaZ562+5ZCN">
+   <input type="hidden" name="label__名称1" value="55So5oi35pi156ew">
+   <input type="hidden" name="label__名称2" value="5LyB5Lia5a2X5Y+3">
+   <input type="hidden" name="label__name" value="6IGU57O75pa55byP">
+   <input type="hidden" name="label__name1" value="5Yib5aeL5Lq65ZCN">
+   <input type="hidden" name="label__下拉" value="6YCJ6aG5">
+   <input type="hidden" name="label__un" value="5Yib5aeL5Lq65aS05YOP5YWo6YOo5Y6L57yp5LiK5LygKOS4gOWvuOe6ouW6leWFjeWGoOeFp+eJhyk=">
+   <input type="hidden" name="label__上传1" value="5Luj6KGo6Lqr5Lu96K+B5q2j6Z2i">
+   <input type="hidden" name="label__上传2" value="5Luj6KGo6Lqr5Lu96K+B5Y+N6Z2i">
+   <input type="hidden" name="label__手写签名" value="5Luj6KGo562+5ZCN">
 
   
 <p>
-<label>名称1</label>
+<label>用户昵称</label>
 <input class="w3-input w3-border w3-round-large w3-white" type="text" name="名称1" id="名称1" value="" maxLength="100">
 </p>
 
 <p>
-<label>名称2</label>
+<label>企业字号</label>
 <input class="w3-input w3-border w3-round-large w3-white" type="text" name="名称2" id="名称2" value="" maxLength="100">
 </p>
 
 <p>
-<label>名称</label>
-<textarea class="w3-input w3-border w3-round-large w3-white" type="text" style="resize:none" name="名称" id="名称" value="" rows="5"></textarea></p>
+<label>联系方式</label>
+<input class="w3-input w3-border w3-round-large w3-white" type="text" name="name" id="name" value="" maxLength="100">
+</p>
 
-<label>下拉</label>
+<p>
+<label>创始人名</label>
+<input class="w3-input w3-border w3-round-large w3-white" type="text" name="name1" id="name1" value="" maxLength="100">
+<p class="w3-opacity">多个人姓名中间加逗号</p>
+</p>
+
+<label>选项</label>
 <select class="w3-select w3-border w3-round-large w3-white" id="下拉" name="下拉">
 			<option>1</option>
 			<option>2</option>
@@ -220,28 +228,28 @@ document.getElementById('手写签名').value = signaturePad7.toDataURL();
 </p>
 
 <p>
-<label>上传1</label>
+<label>创始人头像全部压缩上传(一寸红底免冠照片)</label>
+		<input id="un" name="un[]" multiple="multiple" class="w3-input" type="file" >
+<p class="w3-opacity">图片格式:张三.jpg 压缩包格式:企业字号.zip</p>
+</p>
+
+<p>
+<label>代表身份证正面</label>
 		<input id="上传1" name="上传1[]" multiple="multiple" class="w3-input" type="file" >
-<p class="w3-opacity">图片命名规范:张三+正面.jpg</p>
+<p class="w3-opacity">图片规范:张三+正面.jpg</p>
 </p>
 
 <p>
-<label>上传2</label>
+<label>代表身份证反面</label>
 		<input id="上传2" name="上传2[]" multiple="multiple" class="w3-input" type="file" >
-<p class="w3-opacity">图片命名规范:张三+反面.jpg</p>
+<p class="w3-opacity">图片规范:张三+反面.jpg</p>
 </p>
 
 <p>
-<label>上传3</label>
-		<input id="上传3" name="上传3[]" multiple="multiple" class="w3-input" type="file" >
-<p class="w3-opacity">压缩包命名规范:张三.zip</p>
-</p>
-
-<p>
-<label>手写签名</label>
+<label>代表签名</label>
 <br>
-  <div id="signature-pad7" class="m-signature-pad7">
-    <div class="m-signature-pad--body7">
+  <div id="signature-pad8" class="m-signature-pad8">
+    <div class="m-signature-pad--body8">
       <canvas></canvas>
        <input type="hidden" name="手写签名" id="手写签名" value="">
     </div>
@@ -257,7 +265,7 @@ document.getElementById('手写签名').value = signaturePad7.toDataURL();
   <div class="w3-col l6">
 	<div class="w3-padding-8">
 	    &nbsp;
-		<img src="http://www.ekiwi-scripts.de/form/v4/formmail_v4.php?action=captcha&amp;id=163404" border="1" alt="captcha" name="captchaimg">
+		<img src="http://www.ekiwi-scripts.de/form/v4/formmail_v4.php?action=captcha&amp;id=681313" border="1" alt="captcha" name="captchaimg">
 		<a href="javascript:refreshCaptcha();"><img src="http://www.ekiwi-scripts.de/form/v4/refresh.png" border="0"></a>
     </div>
   </div>  
@@ -861,29 +869,29 @@ return SignaturePad;
 
 })));
 
-var wrapper7 = document.getElementById("signature-pad7"),
-   canvas7 = wrapper7.querySelector("canvas"),
-   signaturePad7;
+var wrapper8 = document.getElementById("signature-pad8"),
+   canvas8 = wrapper8.querySelector("canvas"),
+   signaturePad8;
 
-function resizeCanvas7() {
-    var oldContent = signaturePad7.toData();
+function resizeCanvas8() {
+    var oldContent = signaturePad8.toData();
     var ratio =  Math.max(window.devicePixelRatio || 1, 1);
-    canvas7.width = canvas7.offsetWidth * ratio;
-    canvas7.height = canvas7.offsetHeight * ratio;
-    canvas7.getContext("2d").scale(ratio, ratio);
-    signaturePad7.clear();
-    signaturePad7.fromData(oldContent);
+    canvas8.width = canvas8.offsetWidth * ratio;
+    canvas8.height = canvas8.offsetHeight * ratio;
+    canvas8.getContext("2d").scale(ratio, ratio);
+    signaturePad8.clear();
+    signaturePad8.fromData(oldContent);
 }
 
-var signaturePad7 = new SignaturePad(canvas7);
-signaturePad7.minWidth = 1;
-signaturePad7.maxWidth = 5;
-signaturePad7.penColor = "#000000";
-signaturePad7.backgroundColor = "#FFFFFF";
+var signaturePad8 = new SignaturePad(canvas8);
+signaturePad8.minWidth = 1;
+signaturePad8.maxWidth = 5;
+signaturePad8.penColor = "#000000";
+signaturePad8.backgroundColor = "#FFFFFF";
 
 function resizeCanvas()
 {
-	resizeCanvas7();
+	resizeCanvas8();
 }
 
 window.onresize = resizeCanvas;
@@ -891,7 +899,7 @@ resizeCanvas();
 
 function resetForm()
 {
-	signaturePad7.clear();
+	signaturePad8.clear();
 	document.forms["DAFORM"].reset();
 }
 refreshCaptcha();
