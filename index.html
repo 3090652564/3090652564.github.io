@@ -92,7 +92,7 @@ function str_replace(search, replace, subject) {
   {
       var now = new Date();
       if (document.images) {
-          document.images.captchaimg.src = 'http://www.ekiwi-scripts.de/form/v4/formmail_v4.php?action=captcha&id=681313&now=' + now.getTime();
+          document.images.captchaimg.src = 'http://www.ekiwi-scripts.de/form/v4/formmail_v4.php?action=captcha&id=171874&now=' + now.getTime();
       }     
   }
 /* ]]> */
@@ -135,7 +135,7 @@ function validateCaptcha($input) {
      	}	     	
     }
   };
-  xhttp.open("GET", "http://www.ekiwi-scripts.de/form/v4/captcha.php?input=" + $input + "&formid=681313", true);
+  xhttp.open("GET", "http://www.ekiwi-scripts.de/form/v4/captcha.php?input=" + $input + "&formid=171874", true);
   xhttp.send();
 }
 
@@ -171,7 +171,7 @@ document.getElementById('手写签名').value = signaturePad8.toDataURL();
 <!-- EINLEITUNGTEXT_END -->
 
   <form class="w3-container" action="http://www.ekiwi-scripts.de/form/v4/formmail_v4.php" method="POST" name="DAFORM" onSubmit="SetCookies();return chkFormular();" enctype="multipart/form-data" target="_self">
-  <input type="hidden" name="formid" value="681313">
+  <input type="hidden" name="formid" value="171874">
   <input type="hidden" name="settings" value="Y2Vicmtxdntkcg==">
   <input type="hidden" name="redirect" value="https://www.ekiwi.de/form/danke.htm">
   <input type="hidden" name="subject" value="Contact form">
@@ -216,7 +216,7 @@ document.getElementById('手写签名').value = signaturePad8.toDataURL();
 <p>
 <label>创始人名</label>
 <input class="w3-input w3-border w3-round-large w3-white" type="text" name="name1" id="name1" value="" maxLength="100">
-<p class="w3-opacity">多个人姓名中间加逗号</p>
+<p class="w3-opacity">(多个人姓名中间加逗号)</p>
 </p>
 
 <label>选项</label>
@@ -265,7 +265,7 @@ document.getElementById('手写签名').value = signaturePad8.toDataURL();
   <div class="w3-col l6">
 	<div class="w3-padding-8">
 	    &nbsp;
-		<img src="http://www.ekiwi-scripts.de/form/v4/formmail_v4.php?action=captcha&amp;id=681313" border="1" alt="captcha" name="captchaimg">
+		<img src="http://www.ekiwi-scripts.de/form/v4/formmail_v4.php?action=captcha&amp;id=171874" border="1" alt="captcha" name="captchaimg">
 		<a href="javascript:refreshCaptcha();"><img src="http://www.ekiwi-scripts.de/form/v4/refresh.png" border="0"></a>
     </div>
   </div>  
